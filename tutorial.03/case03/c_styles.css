@@ -12,30 +12,46 @@
 
 */
 
+/* Styling for page body background and text */
 body {
     background-color: black;
-    color: white;
+    color: white; /* default text color */
     font-family: Century Gothic, sans-serif;
 }
 
+/* Styling for main heading */
 header h1 {
     color: yellow;
     font-family: Courier New, Courier, monospace;
     font-size: 28px;
-    letter-spacing: 20px;
+    letter-spacing: 20px; /* kerning */
     text-align: center;
 }
 
+/* Styling for article headings */
 article h2 {
     font-size: 24px;
-    font-weight: normal;
-    letter-spacing: 5px;
+    font-weight: normal; /* overrides default boldface style */
+    letter-spacing: 5px; /* kerning */
 }
 
+/* Styling for article paragraphs */
 article p {
-    text-align: justify;
+    text-align: justify; /* full justification */
 }
 
+/* Styling for strongly emphasized text in the keyword class */
+strong.keyword {
+    color: yellow;
+    font-weight: normal; /* overrides default boldface style */
+}
+
+/* Styling for footer paragraphs */
 footer p {
     text-align: center;
+}
+
+/* Styling for image maps */
+img[usemap] {
+    border-width: 0px; /* removes border from image maps */
 }
