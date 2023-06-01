@@ -16,7 +16,7 @@
         -->
         <meta charset="UTF-8"/>
         <title>International Cryptographic Institute</title>
-        <script src="modernizr-1.5.js"/>
+        <script src="modernizr-1.5.js"></script>
         <link rel="stylesheet" type="text/css" href="c_styles.css">
     </head>
     <body>
@@ -67,7 +67,14 @@
             <hr/>
             <p>
             To learn more cryptography, please tour the site.<br/>
-                <img src="locks.jpg" alt="lock links" width="510" height="110"/>
+                <img src="locks.jpg" alt="lock links" width="510" height="110" usemap="#locks"/>
+                <map name="locks">
+                    <area shape="circle" coords="52, 52, 43" href="history.htm" alt="History"/>
+                    <area shape="circle" coords="155, 52, 43" href="enigma.htm" alt="Enigma"/>
+                    <area shape="circle" coords="255, 52, 43" href="algo.htm" alt="Algorithms"/>
+                    <area shape="circle" coords="355, 52, 43" href="single.htm" alt="Single Key"/>
+                    <area shape="circle" coords="455, 52, 43" href="public.htm" alt="Public Key"/>
+                </map>
             </p>
         </footer>
     </body>
