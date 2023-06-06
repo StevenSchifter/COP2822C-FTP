@@ -52,3 +52,35 @@ nav li {
     margin-bottom: 1.2em;
 }
 
+/* Navigation list link styles */
+nav a {
+    color: rgb(212,212,212);
+    text-decoration: none;
+}
+
+/* Navigation list link hover styles */
+nav a:hover {
+    color: rgb(255,255,255);
+}
+
+/* Speech section styles */
+section#speech {
+    background-color: rgb(212,212,212);
+    width: 40em;
+    float: left;
+    font-family: 'Palatino Linotype', 'Book Antiqua', 'Palatino', serif;
+}
+
+/* Speech section heading styles */
+section#speech h1 {
+    background-color: rgb(51,51,51);
+    color: rgb(212,212,212);
+    font-size: 2em;
+    text-align: center;
+}
+
+/* Speech section pargraph styles */
+section#speech p {
+    font-size: 0.9em;
+    margin: 1em;
+}
