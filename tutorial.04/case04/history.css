@@ -84,3 +84,15 @@ section#speech p {
     font-size: 0.9em;
     margin: 1em;
 }
+
+/* Drop-cap effect */
+section#speech p:first-of-type:first-letter {
+    float: left;
+    font-size: 4em;
+    line-height: 0.8em;
+    margin-right: 0.3em;
+    padding-right: 0.2em;
+    padding-bottom: 0.2em;
+    border-right: 0.02em solid black;
+    border-bottom: 0.02em solid black;
+}
