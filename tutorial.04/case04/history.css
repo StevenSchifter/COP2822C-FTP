@@ -11,3 +11,44 @@
    Supporting Files: 
 
 */
+
+/* Display header, section, and nav elements as blocks */
+header, section, nav {
+    display: block;
+}
+
+/* Set default padding and margin space to 0 pixels */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Set header background, text alignment, and width styles */
+header {
+    background-color: rgb(51,51,51);
+    text-align: center;
+    width: 55em;
+}
+
+/* Set height of inline image within header */
+header img {
+    height: 4em;
+}
+
+/* Navigation list styles */
+nav {
+    float: left;
+    width: 15em;
+    background-color: rgb(51,51,51);
+}
+
+/* Navigation list item styles */
+nav li {
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 0.7em;
+    list-style: none;
+    line-height: 1.4em;
+    margin-left: 1em;
+    margin-bottom: 1.2em;
+}
+
