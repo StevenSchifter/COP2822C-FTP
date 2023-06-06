@@ -23,7 +23,7 @@ header, section, nav {
     margin: 0px;
 }
 
-/* Set header background, text alignment, and width styles */
+/* Header background, text alignment, and width styles */
 header {
     background-color: rgb(51,51,51);
     text-align: center;
@@ -58,7 +58,7 @@ nav a {
     text-decoration: none;
 }
 
-/* Navigation list link hover styles */
+/* Navigation list link hover style */
 nav a:hover {
     color: rgb(255,255,255);
 }
@@ -90,9 +90,9 @@ section#speech p:first-of-type:first-letter {
     float: left;
     font-size: 4em;
     line-height: 0.8em;
-    margin-right: 0.3em;
-    padding-right: 0.2em;
-    padding-bottom: 0.2em;
+    margin-right: 0.03em;
+    padding-right: 0.02em;
+    padding-bottom: 0.02em;
     border-right: 0.02em solid black;
     border-bottom: 0.02em solid black;
 }
