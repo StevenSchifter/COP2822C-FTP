@@ -85,7 +85,7 @@ section#speech p {
     margin: 1em;
 }
 
-/* Drop-cap effect */
+/* Speech section drop-cap effect */
 section#speech p:first-of-type:first-letter {
     float: left;
     font-size: 4em;
@@ -95,4 +95,16 @@ section#speech p:first-of-type:first-letter {
     padding-bottom: 0.2em;
     border-right: 0.02em solid black;
     border-bottom: 0.02em solid black;
+}
+
+/* Speech section first line uppercase style */
+section#speech p:first-of-type:first-line {
+    text-transform: uppercase;
+}
+
+/* Speech section inline image styles */
+section#speech img {
+    float: right;
+    clear: right;
+    height: 4em;
 }
