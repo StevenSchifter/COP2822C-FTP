@@ -1,5 +1,25 @@
 @charset "UTF-8";
 
+/* General table styles */
 table {
     border: #905a12 10px outset;
+    border-collapse: separate;
+    border-spacing: 0.5ex;
+}
+
+/* Table caption styles */
+table caption {
+    font-weight: bold;
+}
+
+/* Table header cell styles */
+table thead tr th {
+    border: #000099 3px inset;
+    padding: 1em;
+}
+
+/* Table data cell styles */
+table tbody tr td {
+    border: #000000 3px inset;
+    padding: 1em;
 }
