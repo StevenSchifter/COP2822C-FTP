@@ -2,24 +2,30 @@
 
 /* General table styles */
 table {
-    border: #905a12 10px outset;
+    border: #71460E 10px outset;
     border-collapse: separate;
     border-spacing: 0.5ex;
+    background-color: #FCF4E8;
 }
 
 /* Table caption styles */
 table caption {
     font-weight: bold;
+    text-align: left;
+    margin: 0.5em 0em;;
 }
 
 /* Table header cell styles */
 table thead tr th {
     border: #000099 3px inset;
+    color: #000099;
+    background-color: #CCEEFF;
     padding: 1em;
 }
 
 /* Table data cell styles */
 table tbody tr td {
     border: #000000 3px inset;
+    background-color: #EEEEEE;
     padding: 1em;
 }
