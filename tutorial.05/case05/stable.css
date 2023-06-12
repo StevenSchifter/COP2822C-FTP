@@ -12,3 +12,23 @@
 
 */
 
+/* Collapse the borders of the puzzle table and its sub-tables */
+.spuzzle, .subTable {
+    border-collapse: collapse;
+}
+
+/* Style for puzzle table data cell border */
+.spuzzle td {
+    border: 5px outset gray;
+}
+
+/* Styles for puzzle table header cell font */
+.spuzzle th {
+    font-size: 8px;
+    color: gray;
+}
+
+/* Styles for puzzle table header cells (within table body row group) */
+.spuzzle tbody th {
+    height: 40px;
+}
