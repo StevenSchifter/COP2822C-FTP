@@ -44,8 +44,14 @@
     border: 1px solid black;
 }
 
-.goldbox .subTable td {
+.goldBox .subTable td {
     background: url(gold.jpg)
-                top left
-                repeat-none;
+                50% 50%
+                no-repeat;
+}
+
+.greenBox .subTable td {
+    background: url(green.jpg)
+                50% 50%
+                no-repeat;
 }
