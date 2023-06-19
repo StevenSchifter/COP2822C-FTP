@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+body {
+    font-family: "Times New Roman", Times, serif;
+}
+
+#ValenciaCollegeLogo {
+    background-color: #992715; /* offical background color of transparent VC logo from the home page */
+    padding: 5px;
+}
