@@ -16,31 +16,33 @@
     </head>
     <body>
         <form id="p6form">
-            <image id="ValenciaCollegeLogo" src="logo-vc.png">
+            <header id="ValenciaCollegeLogo">
+                <image class="center" src="logo-vc.png" alt="Valencia College Logo">
+            </header>
             <fieldset id="userInformation">
                 <legend>User Information</legend>
                 <div id="NameBlock">
                     <label for="userFirstName">First Name:</label>
-                    <input type="text" id="userFirstName" name="userFirstName">
+                    <input type="text" id="userFirstName" name="userFirstName" size="40">
                     <label for="userLastName">Last Name:</label>
-                    <input type="text" id="userLastName" name="userLastName">
+                    <input type="text" id="userLastName" name="userLastName" size="40">
                 </div>
                 <div id="SexBlock">
                     <span>Sex:</span>
-                    <input type="radio" name="userSex" value="Male">Male
-                    <input type="radio" name="userSex" value="Female">Female
+                    <input type="radio" name="userSex" value="Male"> Male
+                    <input type="radio" name="userSex" value="Female"> Female
                 </div>
             </fieldset>
-            <fieldset id="colors">
+            <fieldset id="colorSet">
                 <legend>Colors</legend>
                 <div id="ColorBlock">
-                    <label for="colorCheckbox">Select a color:</label>
-                    <input type="checkbox" name="colorCheckbox" value="Red">Red
-                    <input type="checkbox" name="colorCheckbox" value="White">White
-                    <input type="checkbox" name="colorCheckbox" value="Blue">Blue
+                    <span>Select a color:</span>
+                    <input type="checkbox" name="colorCheckbox" value="Red"> Red
+                    <input type="checkbox" name="colorCheckbox" value="White"> White
+                    <input type="checkbox" name="colorCheckbox" value="Blue"> Blue
                 </div>
             </fieldset>
-            <fieldset id="sports">
+            <fieldset id="sportsSet">
                 <legend>Sports</legend>
                 <div id="SportsBlock">
                     <label for="sportSelector">Select a sport:</label>
@@ -58,16 +60,25 @@
                     </select>
                 </div>
             </fieldset>
-            <fieldset id="globalWarming">
+            <fieldset id="globalWarmingSet">
                 <legend>Global Warming Essay</legend>
-                <label for="globalWarmingEssay">Please write at least one paragraph about global warming.</label>
-                <textarea id="globalWarmingEssay" name="globalWarmingEssay" rows="20" cols="50"></textarea>
+                <div id="GlobalWarmingBlock">
+                    <label for="globalWarmingEssay">Please write at least one paragraph about global warming.</label>
+                    <textarea id="globalWarmingEssay" name="globalWarmingEssay" rows="20" cols="50"></textarea>
+                </div>
             </fieldset>
-            <label for="passwordField">Password:</label>
-            <input type="password" id="passwordField" name="passwordField" size="10" maxlength="10">
-            <label for="fileSelector">Select a file to submit:</label>
-            <input type="file" id="fileSelector" name="fileSelector">
-            <input type="submit" id="submitButton">
+            <fieldset id="passwordSet">
+                <label for="passwordField">Enter a password (up to 10 characters):</label>
+                <input type="password" id="passwordField" name="passwordField" size="10" maxlength="10">
+            </fieldset>
+            <fieldset id="fileSet">
+                <label for="fileSelector">Select a file to submit:</label>
+                <input type="file" id="fileSelector" name="fileSelector">
+            </fieldset>
+            <div id="SubmitButtonContainer">
+                <!-- Upon pressing this button, input will appear in the location/address bar -->
+                <input type="submit" id="SubmitButton">
+            </div>
         </form>
     </body>
 </html>
