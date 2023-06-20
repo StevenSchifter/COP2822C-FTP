@@ -1,10 +1,42 @@
 @charset "UTF-8";
 
-body {
+* {
     font-family: "Times New Roman", Times, serif;
+    font-size: 12pt;
 }
 
 #ValenciaCollegeLogo {
     background-color: #992715; /* offical background color of transparent VC logo from the home page */
     padding: 5px;
+}
+
+#NameBlock label, input {
+    display: block;
+}
+
+#SexBlock label, input {
+    display: inline;
+}
+
+#ColorBlock {
+    display: block;
+}
+
+fieldset {
+    background-color: #F2A516;
+    color: #992715;
+    border: 3px solid #992715;
+    border-radius: 6px;
+    font-weight: bold;
+    margin: 1em auto;
+}
+
+legend {
+    float: left;
+}
+
+div, label, input {
+    clear: left;
+    font-weight: normal;
+    margin-top: 6px;
 }

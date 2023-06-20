@@ -19,38 +19,47 @@
             <image id="ValenciaCollegeLogo" src="logo-vc.png">
             <fieldset id="userInformation">
                 <legend>User Information</legend>
-                <label for="userFirstName">First Name:</label>
-                <input type="text" id="userFirstName" name="userFirstName">
-                <label for="userLastName">Last Name:</label>
-                <input type="text" id="userLastName" name="userLastName">
-                <div class="SexBlock">
+                <div id="NameBlock">
+                    <label for="userFirstName">First Name:</label>
+                    <input type="text" id="userFirstName" name="userFirstName">
+                    <label for="userLastName">Last Name:</label>
+                    <input type="text" id="userLastName" name="userLastName">
+                </div>
+                <div id="SexBlock">
                     <span>Sex:</span>
                     <input type="radio" name="userSex" value="Male">Male
                     <input type="radio" name="userSex" value="Female">Female
                 </div>
             </fieldset>
             <fieldset id="colors">
-                <legend>Select a color:</legend>
-                <input type="checkbox" name="colorCheckbox" value="Red">Red
-                <input type="checkbox" name="colorCheckbox" value="White">White
-                <input type="checkbox" name="colorCheckbox" value="Blue">Blue
+                <legend>Colors</legend>
+                <div id="ColorBlock">
+                    <label for="colorCheckbox">Select a color:</label>
+                    <input type="checkbox" name="colorCheckbox" value="Red">Red
+                    <input type="checkbox" name="colorCheckbox" value="White">White
+                    <input type="checkbox" name="colorCheckbox" value="Blue">Blue
+                </div>
             </fieldset>
             <fieldset id="sports">
-                <legend>Select a sport:</legend>
-                <select name="sportSelector">
-                    <option value="Sport01">Sport01</option>
-                    <option value="Sport02">Sport02</option>
-                    <option value="Sport03">Sport03</option>
-                    <option value="Sport04">Sport04</option>
-                    <option value="Sport05">Sport05</option>
-                    <option value="Sport06">Sport06</option>
-                    <option value="Sport07">Sport07</option>
-                    <option value="Sport08">Sport08</option>
-                    <option value="Sport09">Sport09</option>
-                    <option value="Sport10">Sport10</option>
-                </select>
+                <legend>Sports</legend>
+                <div id="SportsBlock">
+                    <label for="sportSelector">Select a sport:</label>
+                    <select id="sportSelector" name="sportSelector">
+                        <option value="Auto Racing">Auto Racing</option>
+                        <option value="Baseball">Baseball</option>
+                        <option value="Basketball">Basketball</option>
+                        <option value="Football">Football</option>
+                        <option value="Hockey">Hockey</option>
+                        <option value="Rugby">Rugby</option>
+                        <option value="Snowboarding">Snowboarding</option>
+                        <option value="Soccer">Soccer</option>
+                        <option value="Surfing">Surfing</option>
+                        <option value="Tennis">Tennis</option>
+                    </select>
+                </div>
             </fieldset>
             <fieldset id="globalWarming">
+                <legend>Global Warming Essay</legend>
                 <label for="globalWarmingEssay">Please write at least one paragraph about global warming.</label>
                 <textarea id="globalWarmingEssay" name="globalWarmingEssay" rows="20" cols="50"></textarea>
             </fieldset>
