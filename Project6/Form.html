@@ -16,28 +16,28 @@
     </head>
     <body>
         <form id="p6form">
-            <image id="ValenciaCollegeLogo" src="logo-vc.png" />
+            <image id="ValenciaCollegeLogo" src="logo-vc.png">
             <fieldset id="userInformation">
                 <legend>User Information</legend>
                 <label for="userFirstName">First Name:</label>
-                <input type="text" id=="userFirstName">
+                <input type="text" id="userFirstName" name="userFirstName">
                 <label for="userLastName">Last Name:</label>
-                <input type="text" id=="userLastName">
+                <input type="text" id="userLastName" name="userLastName">
                 <div class="SexBlock">
                     <span>Sex:</span>
                     <input type="radio" name="userSex" value="Male">Male
                     <input type="radio" name="userSex" value="Female">Female
                 </div>
             </fieldset>
-            <fieldset id="Colors">
+            <fieldset id="colors">
                 <legend>Select a color:</legend>
-                <input type="checkbox" value="Red">Red
-                <input type="checkbox" value="White">White
-                <input type="checkbox" value="Blue">Blue
+                <input type="checkbox" name="colorCheckbox" value="Red">Red
+                <input type="checkbox" name="colorCheckbox" value="White">White
+                <input type="checkbox" name="colorCheckbox" value="Blue">Blue
             </fieldset>
-            <fieldset id="Sports">
+            <fieldset id="sports">
                 <legend>Select a sport:</legend>
-                <select name="SportSelector">
+                <select name="sportSelector">
                     <option value="Sport01">Sport01</option>
                     <option value="Sport02">Sport02</option>
                     <option value="Sport03">Sport03</option>
@@ -50,6 +50,15 @@
                     <option value="Sport10">Sport10</option>
                 </select>
             </fieldset>
+            <fieldset id="globalWarming">
+                <label for="globalWarmingEssay">Please write at least one paragraph about global warming.</label>
+                <textarea id="globalWarmingEssay" name="globalWarmingEssay" rows="20" cols="50"></textarea>
+            </fieldset>
+            <label for="passwordField">Password:</label>
+            <input type="password" id="passwordField" name="passwordField" size="10" maxlength="10">
+            <label for="fileSelector">Select a file to submit:</label>
+            <input type="file" id="fileSelector" name="fileSelector">
+            <input type="submit" id="submitButton">
         </form>
     </body>
 </html>
