@@ -1,15 +1,15 @@
 @charset "UTF-8";
 
 * {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 12pt;
+    font-family: Georgia, serif;
+    font-size: 14pt;
     margin: 0px;
 }
 
-#ValenciaCollegeLogo {
+header {
     background-color: #992715; /* background color of transparent logo from the Valencia College home page */
     padding: 5px;
-    height: 2.5em;
+    height: 40px;
     margin-bottom: 16px;
 }
 
@@ -20,50 +20,18 @@
     transform: translate(-50%, 0%);
 }
 
-#NameBlock>label, 
-#NameBlock>input {
-    display: block;
-}
-
-#SexBlock>input {
-    display: inline;
-    margin-left: 1em;
-}
-
-#ColorBlock {
-    display: block;
-}
-
-#ColorBlock>input {
-    margin-left: 1em;
-}
-
-#GlobalWarmingBlock>label, 
-#GlobalWarmingBlock>input {
-    display: block;
-}
-
 fieldset {
     background-color: #F2A516; /* derived from the VC logo */
     color: #992715;
     border: 4px solid #992715;
     border-radius: 6px;
     font-weight: bold;
-    margin: 1em auto;
+    margin: 0.5em auto;
     max-width: 30em;
 }
 
-#fileSet>label, 
-#fileSet>input {
-    display: block;
-}
-
-#fileSet>input {
-    width: 90%;
-}
-
 legend {
-    /* Borrowed from: */
+    /* Positioning styles borrowed from: */
     /* https://morgan.cugerone.com/blog/how-to-make-a-fieldset-legend-inline/ */
     font-size: 1.25em;
     font-weight: bold;
@@ -83,11 +51,39 @@ input[type="text"], input[type="password"], select, textarea {
     border: 1px solid #F2C166; /* derived from the VC logo */
 }
 
-select {
-    width: 50%;
+#nameBlock>label, 
+#nameBlock>input {
+    display: block;
 }
 
-#SubmitButton {
+#sexBlock>input {
+    margin-left: 1em;
+}
+
+#colorBlock>input {
+    margin-left: 1em;
+}
+
+#sportSelector {
+    margin-left: 1em;
+    width: 30%;
+}
+
+#globalWarmingBlock>label, 
+#globalWarmingBlock>input {
+    display: block;
+}
+
+#fileSet>label, 
+#fileSet>input {
+    display: block;
+}
+
+#fileSelector {
+    width: 90%;
+}
+
+#submitButton {
     background-color: #992715;
     color: #F2A516;
     font-size: 2em;
@@ -95,7 +91,6 @@ select {
     font-weight: bold;
     border: 4px solid #F2A516;
     border-radius: 6px;
-    margin-bottom: 1em;
     width: 15em;
     position: absolute;
     left: 50%; 
@@ -105,7 +100,7 @@ select {
 /* Since I removed all margins for the sake of the header, */
 /* I had to resort to this trick (including a temporary background color */
 /* to detect its presence) to render a margin below the submit button. */
-#SubmitButtonContainer {
+#submitButtonContainer {
     /* background-color: green; */
     height: 5em;
 }

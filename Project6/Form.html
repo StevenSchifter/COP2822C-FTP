@@ -6,7 +6,7 @@
         <!-- 
             Project 6: The Forms Assignment
             Author: Steven Schifter
-            Date: 6/19/2023
+            Date: 6/20/2023
         -->
         <script
         src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.1/modernizr.min.js">
@@ -16,36 +16,41 @@
     </head>
     <body>
         <form id="p6form">
-            <header id="ValenciaCollegeLogo">
+            <header>
                 <image class="center" src="logo-vc.png" alt="Valencia College Logo">
             </header>
             <fieldset id="userInformation">
                 <legend>User Information</legend>
-                <div id="NameBlock">
-                    <label for="userFirstName">First Name:</label>
+                <div id="nameBlock">
+                    <label for="userFirstName">Enter your first name:</label>
                     <input type="text" id="userFirstName" name="userFirstName" size="40">
-                    <label for="userLastName">Last Name:</label>
+                    <label for="userLastName">Enter your last name:</label>
                     <input type="text" id="userLastName" name="userLastName" size="40">
                 </div>
-                <div id="SexBlock">
-                    <span>Sex:</span>
-                    <input type="radio" name="userSex" value="Male"> Male
-                    <input type="radio" name="userSex" value="Female"> Female
+                <div id="sexBlock">
+                    <span>Select your sex:</span>
+                    <input type="radio" name="userSex" id="maleOption" value="Male">
+                    <label for="maleOption">Male</label>
+                    <input type="radio" name="userSex" id="femaleOption" value="Female">
+                    <label for="femaleOption">Female</label>
                 </div>
             </fieldset>
             <fieldset id="colorSet">
                 <legend>Colors</legend>
-                <div id="ColorBlock">
-                    <span>Select a color:</span>
-                    <input type="checkbox" name="colorCheckbox" value="Red"> Red
-                    <input type="checkbox" name="colorCheckbox" value="White"> White
-                    <input type="checkbox" name="colorCheckbox" value="Blue"> Blue
+                <div id="colorBlock">
+                    <span>Select your favorite color(s):</span>
+                    <input type="checkbox" name="colorCheckbox" id="redOption" value="Red">
+                    <label for="redOption">Red</label>
+                    <input type="checkbox" name="colorCheckbox" id="whiteOption" value="White">
+                    <label for="whiteOption">White</label>
+                    <input type="checkbox" name="colorCheckbox" id="blueOption" value="Blue">
+                    <label for="blueOption">Blue</label>
                 </div>
             </fieldset>
             <fieldset id="sportsSet">
                 <legend>Sports</legend>
-                <div id="SportsBlock">
-                    <label for="sportSelector">Select a sport:</label>
+                <div id="sportsBlock">
+                    <label for="sportSelector">Select your favorite sport:</label>
                     <select id="sportSelector" name="sportSelector">
                         <option value="Auto Racing">Auto Racing</option>
                         <option value="Baseball">Baseball</option>
@@ -53,7 +58,7 @@
                         <option value="Football">Football</option>
                         <option value="Hockey">Hockey</option>
                         <option value="Rugby">Rugby</option>
-                        <option value="Snowboarding">Snowboarding</option>
+                        <option value="Skiing">Skiing</option>
                         <option value="Soccer">Soccer</option>
                         <option value="Surfing">Surfing</option>
                         <option value="Tennis">Tennis</option>
@@ -62,22 +67,26 @@
             </fieldset>
             <fieldset id="globalWarmingSet">
                 <legend>Global Warming Essay</legend>
-                <div id="GlobalWarmingBlock">
-                    <label for="globalWarmingEssay">Please write at least one paragraph about global warming.</label>
+                <div id="globalWarmingBlock">
+                    <label for="globalWarmingEssay">Write at least one paragraph about global warming.</label>
                     <textarea id="globalWarmingEssay" name="globalWarmingEssay" rows="20" cols="50"></textarea>
                 </div>
             </fieldset>
             <fieldset id="passwordSet">
-                <label for="passwordField">Enter a password (up to 10 characters):</label>
-                <input type="password" id="passwordField" name="passwordField" size="10" maxlength="10">
+                <legend>Password</legend>
+                <div id="passwordBlock">
+                    <label for="passwordField">Enter a password (up to 10 characters):</label>
+                    <input type="password" id="passwordField" name="passwordField" size="10" maxlength="10">
+                </div>
             </fieldset>
             <fieldset id="fileSet">
+                <legend>File Upload</legend>
                 <label for="fileSelector">Select a file to submit:</label>
                 <input type="file" id="fileSelector" name="fileSelector">
             </fieldset>
-            <div id="SubmitButtonContainer">
+            <div id="submitButtonContainer">
                 <!-- Upon pressing this button, input will appear in the location/address bar -->
-                <input type="submit" id="SubmitButton">
+                <input type="submit" id="submitButton" value="Submit Form">
             </div>
         </form>
     </body>
