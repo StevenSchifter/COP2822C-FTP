@@ -36,10 +36,33 @@ input, textarea {
     width: 55%;
     margin-left: 10px;
     margin-right: 10px;
+    &:focus {
+        background-color: rgb(225, 225, 240);
+    }
 }
 
 textarea {
     height: 150px;
+}
+
+#username:focus:valid,
+#email:focus:valid,
+#password:focus:valid {
+   background: url(go.png)
+               bottom right
+               no-repeat;
+   background-size: 15px 15px;
+   background-color: rgb(225, 240, 225);
+}
+
+#username:focus:invalid,
+#email:focus:invalid,
+#password:focus:invalid {
+   background: url(stop.png)
+               bottom right
+               no-repeat;
+   background-size: 15px 15px;
+   background-color: rgb(240, 225, 225);
 }
 
 #submitButton {
