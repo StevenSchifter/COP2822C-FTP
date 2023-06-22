@@ -12,3 +12,41 @@
 
 */
 
+fieldset {
+    background-color: rgb(245, 245, 255);
+    margin: 15px auto;
+    padding: 5px;
+    width: 90%;
+}
+
+label {
+    display: block;
+    float: left;
+    clear: left;
+    font-size: 0.9em;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    display: block;
+    float: right;
+    font-size: 0.9em;
+    width: 55%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+textarea {
+    height: 150px;
+}
+
+#submitButton {
+    display: block;
+    float: none;
+    clear: both;
+    width: 200px;
+    height: 30px;
+    margin: 5px auto;
+}
