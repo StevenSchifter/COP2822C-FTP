@@ -1,0 +1,2 @@
+load "COP2822C-FTP"
+sync update:left->right
