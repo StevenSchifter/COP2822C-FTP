@@ -13,9 +13,25 @@
 
 */
 
+body {
+    background: url("tan.jpg");
+}
+
 img {
    border-width: 0px;
 }
 
+h1 {
+    color: green;
+    text-align: center;
+}
 
+h5 {
+    text-align: center;
+}
 
+dt {
+    color: green;
+    font-family: sans-serif;
+    font-weight: bold;
+}
