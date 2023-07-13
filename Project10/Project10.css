@@ -1,5 +1,23 @@
 @charset "UTF-8";
 
 * {
+    font-size: 1.5rem;
+}
 
+body {
+    background-color: #CCCCCC;
+}
+
+#MainContainer {
+    margin: 25vmin;
+}
+
+td {
+    padding: 0.5rem;
+}
+
+button {
+    padding: 0.25rem;
+    color: #FFFFFF;
+    background-color: #00CC00;
 }
