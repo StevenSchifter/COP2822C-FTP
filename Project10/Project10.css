@@ -17,7 +17,12 @@ td {
 }
 
 button {
+    margin: 0.5rem;
     padding: 0.25rem;
     color: #FFFFFF;
     background-color: #00CC00;
+}
+
+.result {
+    margin: 0.5rem;
 }
