@@ -9,20 +9,29 @@ body {
 }
 
 #MainContainer {
-    margin: 25vmin;
+    margin: 10vmin;
+}
+
+.LabelCol, .InputCol {
+    width: 50%;
 }
 
 td {
-    padding: 0.5rem;
+    padding: 0.25rem;
+}
+
+input {
+    float: left;
+    width: 5rem;
 }
 
 button {
     margin: 0.5rem;
-    padding: 0.25rem;
+    padding: 0.25rem 1rem;
     color: #FFFFFF;
     background-color: #00CC00;
 }
 
-.result {
+.Result {
     margin: 0.5rem;
 }
