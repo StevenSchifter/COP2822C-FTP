@@ -24,6 +24,16 @@
       <link href="skyweb.css" rel="stylesheet" type="text/css" />
 
       <script src="datetime.js"></script>
+      
+      <script>
+      /*
+      timeStr is a text string containing the current date and time
+      mapNum is the number of the map to display in the planisphere
+      */
+      
+      const timeStr = showDateTime();
+      const mapNum  = getMap();
+      </script>
 
    </head>
 
@@ -32,7 +42,9 @@
       <header><img src="skyweb.jpg" alt="SkyWeb" /></header>
 
       <div id="maps">
-         <img id="sky" src="sky0.jpg" alt="" />
+         <script>
+            document.write('<img id="sky" src="sky' + mapNum + '.jpg" alt="" />');
+         </script>
          <img id="mask" src="mask.gif" alt="" />
          <div id="datetime">
             January 1, 2014, 12:00 a.m. 
