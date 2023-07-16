@@ -23,16 +23,16 @@
 
       <link href="skyweb.css" rel="stylesheet" type="text/css" />
 
-      <script src="datetime.js"></script>
+      <script type="text/javascript" src="datetime.js"></script>
       
-      <script>
-      /*
-      timeStr is a text string containing the current date and time
-      mapNum is the number of the map to display in the planisphere
-      */
-      
-      const timeStr = showDateTime();
-      const mapNum  = getMap();
+      <script type="text/javascript">
+         /*
+         timeStr is a text string containing the current date and time
+         mapNum is the number of the map to display in the planisphere
+         */
+         
+         var timeStr = showDateTime();
+         var mapNum  = getMap();
       </script>
 
    </head>
@@ -42,12 +42,12 @@
       <header><img src="skyweb.jpg" alt="SkyWeb" /></header>
 
       <div id="maps">
-         <script>
+         <script type="text/javascript">
             document.write('<img id="sky" src="sky' + mapNum + '.jpg" alt="" />');
          </script>
          <img id="mask" src="mask.gif" alt="" />
          <div id="datetime">
-            <script>
+            <script type="text/javascript">
                document.write(timeStr);
             </script>
         </div>
