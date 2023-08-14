@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/* Dark mode styles */
+
+.darkmode {
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+.darklink {
+    color: #00FFFF;
+}
+
+.darklink:visited {
+    color: #FF00FF;
+}
+
+/* Table styles */
+
+table {
+    border-collapse: collapse;
+}
