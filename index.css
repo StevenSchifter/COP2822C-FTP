@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+/* General styles */
+
+* {
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
 /* Dark mode styles */
 
 .darkmode {
@@ -16,17 +26,41 @@
 }
 
 #modeSwitch {
-    border: none;
+    background-color: #bdbdbd;
+    border: 3px solid #ffda00;
     border-radius: 5px;
-    padding: 0.4em;
+    font-size: 1.05rem;
+    font-weight: bold;
+    padding: 0.4rem;
+    width: 10rem;
+}
+
+/* Centering dark mode button inspired by https://www.stechies.com/center-css-button/#2 */
+#modeSwitchContainer {
+    width: 10rem;
+    height: 4rem;
+    margin: auto;
 }
 
 /* Table styles */
 
 table {
     border-collapse: collapse;
+    border: 2px solid;
+    margin: 1em auto;
 }
 
 th, td {
-    padding: 0.3em 1em;
+    padding: 0.3rem 1rem;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-left: none;
+    border-right: none;
+}
+
+th {
+    font-style: italic;
+    letter-spacing: 0.1rem;
+    text-align: left;
+    text-transform: uppercase;
 }

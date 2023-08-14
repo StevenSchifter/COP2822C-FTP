@@ -13,9 +13,14 @@
         <base target="_blank">
     </head>
     <body onload="detectDarkMode()">
-        <p>Welcome to my COP2822C index page! My name is Steven Schifter.</p>
-        <p><button id="modeSwitch" title="Click to switch between light and dark modes" onclick="toggleMode()">☀ Light Mode</button></p>
-        <table border=1>
+        <header>
+            <h1>Index page for COP2822C Web Development</h1>
+            <h2>by Steven Schifter</h2>
+        </header>
+        <div id="modeSwitchContainer">
+            <button id="modeSwitch" title="Click to switch between light and dark modes" onclick="toggleMode()">☀ Light Mode</button>
+        </div>
+        <table>
             <tr>
                 <th>Tutorial #</th>
                 <th>Project</th>
