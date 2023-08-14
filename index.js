@@ -11,18 +11,27 @@ function setMode(myDarkMode)
     if(myDarkMode == 1)
     {
         document.querySelector("body").classList.add("darkmode");
-        document.querySelectorAll("a").classList.add("darklink");
-        document.querySelector("#currentMode").innerText = "🌙 Dark Mode";
+        // Multi-element style setting code borrowed from https://stackoverflow.com/a/21319538
+        links = document.querySelectorAll("a");
+        for (var i = 0; i < links.length; ++i)
+        {
+            links[i].classList.add("darklink");
+        }
+        document.querySelector("#modeSwitch").innerText = "🌙 Dark Mode";
     }
     else if(myDarkMode == 0)
     {
         document.querySelector("body").classList.remove("darkmode");
-        document.querySelectorAll("a").classList.remove("darklink");
-        document.querySelector("#currentMode").innerText = "☀ Light Mode";
+        links = document.querySelectorAll("a");
+        for (var i = 0; i < links.length; ++i)
+        {
+            links[i].classList.remove("darklink");
+        }
+        document.querySelector("#modeSwitch").innerText = "☀ Light Mode";
     }
 }
 
-// Some code borrowed from https://flaviocopes.com/javascript-detect-dark-mode/
+// Dark mode detection code borrowed from https://flaviocopes.com/javascript-detect-dark-mode/
 
 function detectDarkMode()
 {
