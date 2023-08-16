@@ -66,21 +66,21 @@ header, footer {
 
 /* Table styles */
 
-table {
+#indexTable {
     border-collapse: collapse;
     border: 2px solid #000000;
     margin: 1em auto;
 }
 
-th, td {
-    padding: 0.3rem 1rem;
+#indexTable th, #indexTable td {
+    padding: 0.3rem 0.5rem;
     border-top: 1px solid #000000;
     border-bottom: 1px solid #000000;
     border-left: none;
     border-right: none;
 }
 
-th {
+#indexTable th {
     font-style: italic;
     letter-spacing: 0.1rem;
     text-align: left;
