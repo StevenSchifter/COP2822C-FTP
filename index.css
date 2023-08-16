@@ -6,23 +6,45 @@
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 }
 
-header {
+body {
+    margin: 0px;
+}
+
+header, footer {
     text-align: center;
+}
+
+#mainHeader {
+    color: #ffffff;
+    background-color: #0000ff;
+}
+
+#mainHeaderText {
+    margin-top: 0px;
 }
 
 /* Dark mode styles */
 
-.darkmode {
-    color: #FFFFFF;
+.darkMode {
+    color: #ffffff;
     background-color: #000000;
 }
 
-.darklink {
-    color: #00FFFF;
+.darkTableBorder {
+    border: 2px solid #ffffff;
 }
 
-.darklink:visited {
-    color: #FF00FF;
+.darkTableCellBorder {
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.darkLink {
+    color: #00ffff;
+}
+
+.darkLink:visited {
+    color: #ff00ff;
 }
 
 #modeSwitch {
@@ -46,14 +68,14 @@ header {
 
 table {
     border-collapse: collapse;
-    border: 2px solid;
+    border: 2px solid #000000;
     margin: 1em auto;
 }
 
 th, td {
     padding: 0.3rem 1rem;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
     border-left: none;
     border-right: none;
 }

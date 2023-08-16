@@ -13,14 +13,16 @@
         <base target="_blank">
     </head>
     <body onload="detectDarkMode()">
-        <header>
-            <h1>Index page for COP2822C Web Development</h1>
-            <h2>by Steven Schifter</h2>
+        <header id="mainHeader">
+            <h1 id="mainHeaderText">COP2822C Web Development</h1>
+        </header>
+        <header id="subHeader">
+            <h2>Index Page</h2>
         </header>
         <div id="modeSwitchContainer">
             <button id="modeSwitch" title="Click to switch between light and dark modes" onclick="toggleMode()">☀ Light Mode</button>
         </div>
-        <table>
+        <table id="indexTable">
             <tr>
                 <th>Tutorial #</th>
                 <th>Project</th>
@@ -77,5 +79,8 @@
                 <td><a href="tutorial.10/case10/skymap.htm">SkyWeb</a></td>
             </tr>
         </table>
+        <footer id="mainFooter">
+            <p>&copy; 2023 Steven Schifter</p>
+        </footer>
     </body>
 </html>

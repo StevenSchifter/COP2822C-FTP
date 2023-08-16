@@ -10,29 +10,50 @@ function setMode(myDarkMode)
 {
     if(myDarkMode == 1)
     {
-        document.querySelector("body").classList.add("darkmode");
+        document.querySelector("body").classList.add("darkMode");
+        document.querySelector("#indexTable").classList.add("darkTableBorder");
+        document.querySelector("#modeSwitch").innerText = "🌙 Dark Mode";
         // Multi-element style setting code borrowed from https://stackoverflow.com/a/21319538
         links = document.querySelectorAll("a");
-        for (var i = 0; i < links.length; ++i)
+        for(var a = 0; a < links.length; ++a)
         {
-            links[i].classList.add("darklink");
+            links[a].classList.add("darkLink");
         }
-        document.querySelector("#modeSwitch").innerText = "🌙 Dark Mode";
+        tableHeaderCells = document.querySelectorAll("th")
+        for(var h = 0; h < tableHeaderCells.length; ++h)
+        {
+            tableHeaderCells[h].classList.add("darkTableCellBorder");
+        }
+        tableDataCells = document.querySelectorAll("td")
+        for(var d = 0; d < tableDataCells.length; ++d)
+        {
+            tableDataCells[d].classList.add("darkTableCellBorder");
+        }
     }
     else if(myDarkMode == 0)
     {
-        document.querySelector("body").classList.remove("darkmode");
-        links = document.querySelectorAll("a");
-        for (var i = 0; i < links.length; ++i)
-        {
-            links[i].classList.remove("darklink");
-        }
+        document.querySelector("body").classList.remove("darkMode");
+        document.querySelector("#indexTable").classList.remove("darkTableBorder");
         document.querySelector("#modeSwitch").innerText = "☀ Light Mode";
+        links = document.querySelectorAll("a");
+        for(var a = 0; a < links.length; ++a)
+        {
+            links[a].classList.remove("darkLink");
+        }
+        tableHeaderCells = document.querySelectorAll("th")
+        for(var h = 0; h < tableHeaderCells.length; ++h)
+        {
+            tableHeaderCells[h].classList.remove("darkTableCellBorder");
+        }
+        tableDataCells = document.querySelectorAll("td")
+        for(var d = 0; d < tableDataCells.length; ++d)
+        {
+            tableDataCells[d].classList.remove("darkTableCellBorder");
+        }
     }
 }
 
 // Dark mode detection code borrowed from https://flaviocopes.com/javascript-detect-dark-mode/
-
 function detectDarkMode()
 {
     if(window.matchMedia)
