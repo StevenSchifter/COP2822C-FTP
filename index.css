@@ -21,6 +21,7 @@ header, footer {
 
 #mainHeaderText {
     margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 /* Dark mode styles */
@@ -66,13 +67,13 @@ header, footer {
 
 /* Table styles */
 
-#indexTable {
+table {
     border-collapse: collapse;
     border: 2px solid #000000;
     margin: 1em auto;
 }
 
-#indexTable th, #indexTable td {
+th, td {
     padding: 0.3rem 0.5rem;
     border-top: 1px solid #000000;
     border-bottom: 1px solid #000000;
@@ -80,7 +81,7 @@ header, footer {
     border-right: none;
 }
 
-#indexTable th {
+th {
     font-style: italic;
     letter-spacing: 0.1rem;
     text-align: left;

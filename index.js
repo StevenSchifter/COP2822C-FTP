@@ -11,7 +11,7 @@ function setMode(myDarkMode)
     if(myDarkMode == 1)
     {
         document.querySelector("body").classList.add("darkMode");
-        document.querySelector("#indexTable").classList.add("darkTableBorder");
+        document.querySelector("table").classList.add("darkTableBorder");
         document.querySelector("#modeSwitch").innerText = "🌙 Dark Mode";
         // Multi-element style setting code borrowed from https://stackoverflow.com/a/21319538
         links = document.querySelectorAll("a");
@@ -33,7 +33,7 @@ function setMode(myDarkMode)
     else if(myDarkMode == 0)
     {
         document.querySelector("body").classList.remove("darkMode");
-        document.querySelector("#indexTable").classList.remove("darkTableBorder");
+        document.querySelector("table").classList.remove("darkTableBorder");
         document.querySelector("#modeSwitch").innerText = "☀ Light Mode";
         links = document.querySelectorAll("a");
         for(var a = 0; a < links.length; ++a)
