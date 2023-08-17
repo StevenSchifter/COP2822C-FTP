@@ -43,11 +43,11 @@ header, footer {
 
 .darkLink {
     color: #00ffff;
+    &:visited {
+        color: #ff00ff;
+    }
 }
 
-.darkLink:visited {
-    color: #ff00ff;
-}
 
 #modeSwitch {
     background-color: #bdbdbd;
