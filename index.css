@@ -60,7 +60,7 @@ th {
     text-align: left;
     text-transform: uppercase;
 }
-td {
+td, footer p {
     line-height: 2em;
 }
 /* Dark scheme */
