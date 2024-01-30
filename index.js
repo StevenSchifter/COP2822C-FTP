@@ -20,7 +20,7 @@ function toggleScheme()
 {
     // Add or remove the dark scheme CSS class
     document.body.classList.toggle("dark-scheme");
-    document.querySelector("#indexTable").classList.toggle("dark-scheme");
+    document.querySelector("#index-table").classList.toggle("dark-scheme");
     document.querySelector("#scheme-toggle-button").classList.toggle("dark-scheme");
     // Multi-element style setting code borrowed from https://stackoverflow.com/a/21319538
     links = document.querySelectorAll("a");
