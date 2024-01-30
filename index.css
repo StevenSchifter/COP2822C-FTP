@@ -17,10 +17,7 @@ header, footer {
     text-align: center;
 }
 a {
-    /* Using a CSS border instead of an underline as per advice from https://www.webfx.com/blog/web-design/hyperlink-design/ */
-    text-decoration: none;
-    padding-bottom: 0.005rem;
-    border-bottom: 1px solid;
+    text-underline-offset: 0.4em;
     &:link {
         color: #3333fd;
     }
@@ -38,7 +35,7 @@ a {
 #main-header {
     color: #ffffff;
     background-color: #0000ff;
-    padding-bottom: 1px;
+    padding-bottom: 0.1rem;
 }
 #main-header-text {
     margin-top: 0px;
@@ -51,7 +48,7 @@ table {
     margin: 1rem auto;
 }
 th, td {
-    padding: 0.8rem 0.5rem;
+    padding: 0.5rem 0.5rem;
     border-top: 1px solid #000000;
     border-bottom: 1px solid #000000;
     border-left: none;
@@ -62,6 +59,9 @@ th {
     letter-spacing: 0.1rem;
     text-align: left;
     text-transform: uppercase;
+}
+td {
+    line-height: 2em;
 }
 /* Dark scheme */
 /* Colors tested at https://webaim.org/resources/linkcontrastchecker/?fcolor=F1F1F1&bcolor=1F1F1F&lcolor=0090E9 */
