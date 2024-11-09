@@ -115,17 +115,13 @@ section {
 }
 
 #InterestsList ul li:nth-child(5) {
-    list-style-type: "🏎";
+    list-style-type: "😄";
 }
 
 #InterestsList ul li:nth-child(6) {
-    list-style-type: "🛣";
+    list-style-type: "🏎";
 }
 
 #InterestsList ul li:nth-child(7) {
     list-style-type: "🤖";
-}
-
-#InterestsList ul li:nth-child(8) {
-    list-style-type: "🤨";
 }
