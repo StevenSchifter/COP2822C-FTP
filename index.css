@@ -21,7 +21,8 @@ body {
 .strong {
     font-weight: bold;
 }
-#scheme-selector {
+select {
+    font-size: 1rem;
     padding: 0.25rem;
 }
 a {
