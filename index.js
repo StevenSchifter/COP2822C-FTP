@@ -6,26 +6,25 @@ const colorScheme = document.querySelector('meta[name="color-scheme"]');
 function detectColorSchemePref()
 {
     let schemeSelector = document.querySelector('#scheme-selector');
+    let usingDarkScheme = localStorage.getItem('usingDarkScheme');
     
     // First check local storage for dark scheme preference,
     // and then make the selector value match that preference
-    if (localStorage.getItem('usingDarkScheme') === 'true')
+    if (usingDarkScheme === 'true')
     {
         toggleScheme('dark');
         schemeSelector.value = 'dark';
     }
-    else if (localStorage.getItem('usingDarkScheme') === 'false')
+    else if (usingDarkScheme === 'false')
     {
         toggleScheme('light');
         schemeSelector.value = 'light';
     }
-    else if (localStorage.getItem('usingDarkScheme') === 'auto')
+    else // Default to automatic color scheme
     {
         toggleScheme('auto');
         schemeSelector.value = 'auto';
     }
-    
-    // If no preference was found, check OS dark mode setting and use that to set scheme and preference (now handled automatically by the meta tag named "color-scheme")
 }
 
 // Switch between automatic, light, and dark schemes 
@@ -43,7 +42,7 @@ function toggleScheme(schemePref)
         colorScheme.setAttribute('content', 'dark');
         localStorage.setItem('usingDarkScheme', 'true');
     }
-    else // Default to automatic color scheme
+    else if (schemePref === 'auto')
     {
         colorScheme.setAttribute('content', 'light dark');
         localStorage.setItem('usingDarkScheme', 'auto');
