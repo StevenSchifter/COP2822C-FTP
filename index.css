@@ -3,14 +3,16 @@
 * {
     box-sizing: border-box;
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    --border-and-text-colors: light-dark(#000000, #f1f1f1);
+    --background-colors: light-dark(#d1d1d1, #1f1f1f);
 }
 /* Colors tested at https://webaim.org/resources/linkcontrastchecker/?fcolor=000000&bcolor=D1D1D1&lcolor=3333FD 
 and
 https://webaim.org/resources/linkcontrastchecker/?fcolor=F1F1F1&bcolor=1F1F1F&lcolor=0090E9
 */
 body {
-    color: light-dark(#000000, #f1f1f1);
-    background-color: light-dark(#d1d1d1, #1f1f1f);
+    color: var(--border-and-text-colors);
+    background-color: var(--background-colors);
     margin: 0px;
 }
 .centered {
@@ -55,15 +57,24 @@ header {
 /* Table styles */
 table {
     border-collapse: collapse;
-    border: 2px solid light-dark(#000000, #f1f1f1);;
+    border: 2px solid var(--border-and-text-colors);
     margin: 2.5rem auto;
+}
+tr {
+    @media screen and (max-width: 550px) {
+        border: 1px solid var(--border-and-text-colors);
+    }
 }
 th, td {
     padding: 0.5rem 0.5rem;
-    border-top: 1px solid light-dark(#000000, #f1f1f1);;
-    border-bottom: 1px solid light-dark(#000000, #f1f1f1);;
+    border-top: 1px solid var(--border-and-text-colors);
+    border-bottom: 1px solid var(--border-and-text-colors);
     border-left: none;
     border-right: none;
+    @media screen and (max-width: 550px) {
+        display: block;
+        border: none;
+    }
 }
 th {
     font-style: italic;
