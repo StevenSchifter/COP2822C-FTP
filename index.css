@@ -2,7 +2,7 @@
 /* Site-wide styles */
 * {
     box-sizing: border-box;
-    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    font-family: "Verdana", "Geneva", sans-serif;
     --border-and-text-colors: light-dark(#000000, #f1f1f1);
     --background-colors: light-dark(#d1d1d1, #1f1f1f);
 }
@@ -43,12 +43,14 @@ a {
     }
 }
 /* Header styles */
-header {
-    text-align: center;
-}
 #main-header {
     color: #ffffff;
     background-color: #0000ff;
+    text-align: center;
+    padding-inline: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 3rem;
 }
 #main-header-text {
     margin-top: 0px;
@@ -57,7 +59,7 @@ header {
 /* Table styles */
 table {
     border-collapse: collapse;
-    border: 2px solid var(--border-and-text-colors);
+    border: none;
     margin: 2.5rem auto;
 }
 tr {
@@ -78,7 +80,7 @@ th, td {
 }
 th {
     font-style: italic;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.15rem;
     text-align: left;
     text-transform: uppercase;
 }

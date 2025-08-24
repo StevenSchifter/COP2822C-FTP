@@ -3,7 +3,8 @@
 /*
     COP2822C Project 3
     Author: Steven Schifter
-    Date: 5/30/2023
+    Created: 2023-05-30
+	Updated: 2025-08-24
 */
 
 * {
@@ -92,30 +93,22 @@ section {
     padding-left: 1em;
 }
 
-#InterestsList ul li:nth-child(1) {
+#bw {
     list-style-type: "🐦";
 }
 
-#InterestsList ul li:nth-child(2) {
+#rd {
     list-style-type: "📖";
 }
 
-#InterestsList ul li:nth-child(3) {
-    list-style-type: "🚶‍♂️";
-}
-
-#InterestsList ul li:nth-child(4) {
+#lm {
     list-style-type: "🎧";
 }
 
-#InterestsList ul li:nth-child(5) {
+#co {
     list-style-type: "😄";
 }
 
-#InterestsList ul li:nth-child(6) {
-    list-style-type: "🏎";
-}
-
-#InterestsList ul li:nth-child(7) {
-    list-style-type: "🤖";
+#f1 {
+    list-style-type: "🏎️";
 }
