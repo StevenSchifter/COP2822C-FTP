@@ -15,77 +15,79 @@
         <base target="_blank">
     </head>
     <body onload="detectColorSchemePref()">
-        <header id="main-header">
+        <header id="main-header" class="centered">
             <h1 id="main-header-text">COP2822C<br>Web Development</h1>
         </header>
-        <header id="sub-header" class="centered">
-            <h2>Index Page</h2>
-        </header>
-        <div id="scheme-selector-container" class="centered">
-            <label for="scheme-selector" class="strong">Color scheme: </label>
-            <select name="scheme-selector" id="scheme-selector" onchange="toggleScheme(this.value)" tabindex="0">
-                <option value="auto">Automatic</option>
-                <option value="light">Light</option>
-                <option value="dark">Dark</option>
-            </select>
-        </div>
-        <table id="index-table">
-            <tr>
-                <th>Tutorial</th>
-                <th>Project</th>
-                <th>Case Problem</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Acquired a free 000webhost.com account (expired in 2024)</td>
-                <td><a href="tutorial.01/case01/mathhigh.htm">Math High</a></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td><a href="Project2/Project2.htm">Designed and published my bio page</a></td>
-                <td><a href="tutorial.02/case02/uwlist.htm">Higher Ed</a></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td><a href="Project2/Project2.htm">Added styles to my bio page</a></td>
-                <td><a href="tutorial.03/case03/crypt.htm">Encryption</a></td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>N/A</td>
-                <td><a href="tutorial.04/case04/lincoln.htm">American Rhetoric</a></td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td><a href="Project5/Project5.html">Table Example</a></td>
-                <td><a href="tutorial.05/case05/sudoku.htm">Sudoku</a></td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td><a href="Project6/Form.html">Form Example</a> (submissions are not collected)</td>
-                <td><a href="tutorial.06/case06/sblogger.htm">Sports Blog</a></td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td><a href="Project2/Project2.htm">Added multimedia (an audio clip) to my bio page</a></td>
-                <td><a href="tutorial.07/case07/rf.htm">Robert Frost</a></td>
-            </tr>
-            <tr>
-                <td>8</td>
-                <td><a href="Project2/Project2.htm">Added print-specific styles to my bio page</a></td>
-                <td><a href="tutorial.08/case08/recipe.htm">dessertWEB</a></td>
-            </tr>
-            <tr>
-                <td>9</td>
-                <td>N/A</td>
-                <td><a href="tutorial.09/case09/breakfast.htm">Kelsey's Diner</td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td><a href="Project10/Project10.html">JavaScript Example</a></td>
-                <td><a href="tutorial.10/case10/skymap.htm">SkyWeb</a></td>
-            </tr>
-        </table>
+        <main>
+            <header id="sub-header" class="centered">
+                <h2>Index Page</h2>
+            </header>
+            <div id="scheme-selector-container" class="centered">
+                <label for="scheme-selector" class="strong">Color scheme: </label>
+                <select name="scheme-selector" id="scheme-selector" onchange="toggleScheme(this.value)" tabindex="0">
+                    <option value="auto">Automatic</option>
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                </select>
+            </div>
+            <table id="index-table">
+                <tr>
+                    <th>Tutorial</th>
+                    <th>Project</th>
+                    <th>Case Problem</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Acquired a free 000webhost.com account (expired in 2024)</td>
+                    <td><a href="tutorial.01/case01/mathhigh.htm">Math High</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="Project2/Project2.htm">Designed and published my bio page</a></td>
+                    <td><a href="tutorial.02/case02/uwlist.htm">Higher Ed</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="Project2/Project2.htm">Added styles to my bio page</a></td>
+                    <td><a href="tutorial.03/case03/crypt.htm">Encryption</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>N/A</td>
+                    <td><a href="tutorial.04/case04/lincoln.htm">American Rhetoric</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><a href="Project5/Project5.html">Table Example</a></td>
+                    <td><a href="tutorial.05/case05/sudoku.htm">Sudoku</a></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><a href="Project6/Form.html">Form Example</a> (submissions are not collected)</td>
+                    <td><a href="tutorial.06/case06/sblogger.htm">Sports Blog</a></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><a href="Project2/Project2.htm">Added multimedia (an audio clip) to my bio page</a></td>
+                    <td><a href="tutorial.07/case07/rf.htm">Robert Frost</a></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td><a href="Project2/Project2.htm">Added print-specific styles to my bio page</a></td>
+                    <td><a href="tutorial.08/case08/recipe.htm">dessertWEB</a></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>N/A</td>
+                    <td><a href="tutorial.09/case09/breakfast.htm">Kelsey's Diner</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td><a href="Project10/Project10.html">JavaScript Example</a></td>
+                    <td><a href="tutorial.10/case10/skymap.htm">SkyWeb</a></td>
+                </tr>
+            </table>
+        </main>
         <footer id="main-footer" class="centered">
             <p>Project Implementations &copy; 2023 Steven Schifter</p>
             <p>Case Problems from <a href="https://play.google.com/store/books/details/Patrick_M_Carey_New_Perspectives_on_HTML_and_CSS_C?id=ZZIJAAAAQBAJ"><em>New Perspectives on HTML and CSS: Comprehensive: Edition 6</em> by Patrick M. Carey</a></p>
