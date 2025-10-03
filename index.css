@@ -3,16 +3,20 @@
 * {
     box-sizing: border-box;
     font-family: "Verdana", "Geneva", sans-serif;
-    --border-and-text-colors: light-dark(#000000, #f1f1f1);
-    --background-colors: light-dark(#d1d1d1, #1f1f1f);
+    --light-text: rgb(0, 0, 0);
+    --light-bg: rgb(216, 216, 216);
+    --dark-text: rgb(243, 243, 243);
+    --dark-bg: rgb(27, 27, 27);
 }
-/* Colors tested at https://webaim.org/resources/linkcontrastchecker/?fcolor=000000&bcolor=D1D1D1&lcolor=3333FD 
+/*
+Light-dark info: https://css-tricks.com/come-to-the-light-dark-side/
+Colors tested at https://webaim.org/resources/linkcontrastchecker/?fcolor=000000&bcolor=D8D8D8&lcolor=2D36FC 
 and
-https://webaim.org/resources/linkcontrastchecker/?fcolor=F1F1F1&bcolor=1F1F1F&lcolor=0090E9
+https://webaim.org/resources/linkcontrastchecker/?fcolor=F3F3F3&bcolor=1B1B1B&lcolor=0090EA
 */
 body {
-    color: var(--border-and-text-colors);
-    background-color: var(--background-colors);
+    color: light-dark(var(--light-text), var(--dark-text));
+    background-color: light-dark(var(--light-bg), var(--dark-bg));
     margin: 0px;
 }
 main {
@@ -30,18 +34,18 @@ select {
     padding: 0.25rem;
 }
 a {
-    text-underline-offset: 0.4em;
+    text-underline-offset: 0.3em;
     &:link {
-        color: light-dark(#3333fd, #0090e9);
+        color: light-dark(rgb(45, 54, 252), rgb(0, 144, 234));
     }
     &:visited {
-        color: light-dark(#a000a0, #f000f0);
+        color: light-dark(rgb(162, 0, 162), rgb(243, 0, 243));
     }
     &:hover {
-        color: light-dark(#8d4700, #bd7b00);
+        color: light-dark(rgb(144, 72, 0), rgb(189, 126, 0));
     }
     &:active {
-        color: light-dark(#006833, #009e00);
+        color: light-dark(rgb(0, 108, 54), rgb(0, 153, 0));
     }
 }
 /* Header styles */
@@ -65,13 +69,13 @@ table {
 }
 tr {
     @media screen and (max-width: 550px) {
-        border: 1px solid var(--border-and-text-colors);
+        border: 1px solid light-dark(var(--light-text), var(--dark-text));
     }
 }
 th, td {
     padding: 0.5rem 0.5rem;
-    border-top: 1px solid var(--border-and-text-colors);
-    border-bottom: 1px solid var(--border-and-text-colors);
+    border-top: 1px solid light-dark(var(--light-text), var(--dark-text));
+    border-bottom: 1px solid light-dark(var(--light-text), var(--dark-text));
     border-left: none;
     border-right: none;
     @media screen and (max-width: 550px) {
